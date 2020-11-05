@@ -3,29 +3,49 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.menu ul{
-    list-style: none;
+.menu ul {
     margin: 0;
+    list-style: none;
     padding: 0;
+    display: flex;
+   
 }
-.menu item {
-    float: left;
+.menu li{
+  
+    position: relative;  
+    text-align: center;
+    flex-grow: 1;
+
 }
-.menu item {
-    background-color: darkblue;
-    color: darkgray;
-    padding: 12px 22px;
+.menu li:hover{
+    background: #B3B3B3;
+}
+
+.menu li a{
+   
     display: block;
-    font-size: 16px;
+    padding: 15px 20x;
+    color:white;
     text-decoration: none;
 }
-.menu desple{
-    display: mone;
+
+.menu > li{
+    float: left;
+    
 }
-.munu item a:hover{
-    background-color: darkgrey;
-    color: darkslategray;
+
+.menu li ul{
+
+    display: none;
+    position: absolute;
+    padding: 12px 40px;
+    background: #F47920;
+    width: 78%; 
+  
 }
-.menu item:hover desple{
-    display: inline-block;
-}
+ 
+
+
+.menu li:hover > ul{
+    display: block;
+    
